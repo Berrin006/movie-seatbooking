@@ -1,4 +1,3 @@
-
 export default class Movie {
   constructor(id, title, price) {
     this.id = id;
