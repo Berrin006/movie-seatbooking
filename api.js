@@ -12,10 +12,10 @@ export async function fetchMovies() {
     console.warn("API not available, using fallback data");
 
     return [
-      new Movie(1, "Fast and Furious 6", 100),
-      new Movie(2, "The Mummy Returns", 50),
-      new Movie(3, "Jumanji: Welcome to the Jungle", 70),
-      new Movie(4, "Rampage", 40),
+      new Movie(1, "Fast and Furious 6", 150),
+      new Movie(2, "The Mummy Returns", 100),
+      new Movie(3, "Jumanji: Welcome to the Jungle", 110),
+      new Movie(4, "Rampage", 115),
       new Movie(5, "Black Widow", 120),
     ];
   }
