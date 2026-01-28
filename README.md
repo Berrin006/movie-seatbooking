@@ -31,4 +31,6 @@ Projektet bygger på en **befintlig HTML/CSS-bas**. Min huvudsakliga insats har 
 - Dynamisk prisuppdatering
 - GitHub Pages publicerad statisk version
 
-
+## Länk
+- https://berrin006.github.io/movie-seatbooking/  (pages)
+- https://github.com/Berrin006/movie-seatbooking  (repo)
