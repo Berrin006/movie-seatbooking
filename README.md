@@ -1,43 +1,45 @@
-# Movie Seat Booking
+Movie Seat Booking
 
-## Beskrivning
+Beskrivning:
 
-Detta projekt är en Movie Seat Booking-applikation där användare kan:
+- En Movie Seat Booking-applikation byggd i JavaScript där användaren kan välja film och boka lediga biografstolar. Antal valda säten och totalpris uppdateras dynamiskt, och redan upptagna platser kan inte klickas.
+- Projektet bygger på en förgiven HTML- och CSS-bas, medan all funktionalitet är implementerad i JavaScript med ES6-moduler.
 
-- Välja en film från dropdown
-- Välja lediga säten
-- Se antal valda säten och totalpris uppdateras dynamiskt
-- Occupied-säten går ej att klicka på
+Funktionalitet:
 
-Projektet bygger på en **befintlig HTML/CSS-bas**. Min huvudsakliga insats har varit all **JavaScript-logik**.
+- Välj film från dropdown (hämtas från JSON-server)
+- Markera/avmarkera lediga säten
+- Occupied-säten kan inte väljas
+- Dynamisk uppdatering av antal säten och totalpris
+- Fallback-data används vid publicering på GitHub Pages
 
-## Dag-för-dag loggbok
-
-### Dag 1
-
-- Implementerade seat selection med klick och toggle
-- Dynamisk uppdatering av antal valda säten och pris
-
-### Dag 2
-
-- Skapade Movie-klass
-- Satte upp JSON-server med movies-data
-- Hämtade filmer via fetch och fyllde dropdown dynamiskt
-
-### Dag 3
-
-- Delade upp koden i moduler (`Movie.js`, `api.js`, `seatBooking.js`, `main.js`)
-- Kopplade seat booking-logik till vald film
-- Anpassade fallback för GitHub Pages
-
-## Teknisk info
+Teknisk lösning:
 
 - JavaScript (ES6-moduler)
-- JSON-server lokalt
-- Dynamisk prisuppdatering
-- GitHub Pages publicerad statisk version
+- Movie-klass för filmdata
+- JSON-server (REST API) lokalt
+- Moduluppdelad kod (Movie.js, api.js, seatBooking.js, main.js)
+- GitHub Pages (statisk version)
 
-## Länk
+Dag-för-dag loggbok:
 
-- https://berrin006.github.io/movie-seatbooking/ (pages)
-- https://github.com/Berrin006/movie-seatbooking (repo)
+Dag 1:
+
+- Sätesbokning med klick och dynamisk prisuppdatering
+
+Dag 2:
+
+- Movie-klass och JSON-server
+- Hämtning av filmer via fetch
+
+Dag 3:
+
+- Modulindelning av koden
+- Koppling mellan filmval och sätesbokning
+- Fallback för GitHub Pages
+- Uppdaterade priser och lade till film
+
+Länkar:
+
+- Live: https://berrin006.github.io/movie-seatbooking/
+- Repo: https://github.com/Berrin006/movie-seatbooking
