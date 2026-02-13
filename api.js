@@ -7,9 +7,8 @@ export async function fetchMovies() {
     const response = await fetch(API_URL);
     const data = await response.json();
 
-    return data.map((movie) => new Movie(movie.id, movie.title, movie.price));
-  } catch (error) {
-    console.warn("API not available, using fallback data");
+    return data.movies.map((movie) => new Movie(movie.id, movie.title, movie.price));  } catch (error) {
+    console.warn("API not available, using fallback data", error);
 
     return [
       new Movie(1, "Fast and Furious 6", 150),

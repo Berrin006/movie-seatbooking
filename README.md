@@ -39,7 +39,19 @@ Dag 3:
 - Fallback för GitHub Pages
 - Uppdaterade priser och lade till film
 
+
+Komplettering 1:
+
+- Installerat ESLint och konfigurerat projektet för webbläsarmiljö.
+
+- Kört eslint --fix för att automatisera formatering av semikolon och citattecken i alla moduler.
+
+- Åtgärdat manuellt "no-unused-vars" i api.js för att rensa bort oanvänd felhanteringskod.
+
+- Verifierat att koden nu passerar linting utan anmärkningar.
+
 Länkar:
+
 
 - Live: https://berrin006.github.io/movie-seatbooking/
 - Repo: https://github.com/Berrin006/movie-seatbooking
