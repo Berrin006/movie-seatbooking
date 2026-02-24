@@ -5,9 +5,18 @@ const API_URL = "http://localhost:3000/movies";
 export async function fetchMovies() {
   try {
     const response = await fetch(API_URL);
+
+    if (!response.ok) {
+      throw new Error("Server error");
+    }
+
     const data = await response.json();
 
-    return data.movies.map((movie) => new Movie(movie.id, movie.title, movie.price));  } catch (error) {
+    return data.map(
+      (movie) => new Movie(movie.id, movie.title, movie.price)
+    );
+
+  } catch (error) {
     console.warn("API not available, using fallback data", error);
 
     return [
