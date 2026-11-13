@@ -1,57 +1,83 @@
-Movie Seat Booking
+🎬 Movie Seat Booking
+📌 Beskrivning
 
-Beskrivning:
+En Movie Seat Booking-applikation byggd i JavaScript där användaren kan välja film och boka lediga biografstolar. Antal valda säten och totalpris uppdateras dynamiskt, och redan upptagna platser kan inte väljas.
 
-- En Movie Seat Booking-applikation byggd i JavaScript där användaren kan välja film och boka lediga biografstolar. Antal valda säten och totalpris uppdateras dynamiskt, och redan upptagna platser kan inte klickas.
-- Projektet bygger på en förgiven HTML- och CSS-bas, medan all funktionalitet är implementerad i JavaScript med ES6-moduler.
+Projektet bygger på en förgiven HTML- och CSS-bas, medan all funktionalitet är implementerad i JavaScript med ES6-moduler.
 
-Funktionalitet:
+✨ Funktionalitet
 
-- Välj film från dropdown (hämtas från JSON-server)
-- Markera/avmarkera lediga säten
-- Occupied-säten kan inte väljas
-- Dynamisk uppdatering av antal säten och totalpris
-- Fallback-data används vid publicering på GitHub Pages
+🎥 Välj film från dropdown (hämtas från JSON-server)
 
-Teknisk lösning:
+🎫 Markera och avmarkera lediga säten
 
-- JavaScript (ES6-moduler)
-- Movie-klass för filmdata
-- JSON-server (REST API) lokalt
-- Moduluppdelad kod (Movie.js, api.js, seatBooking.js, main.js)
-- GitHub Pages (statisk version)
+❌ Upptagna säten kan inte väljas
 
-Dag-för-dag loggbok:
+💰 Dynamisk uppdatering av antal säten och totalpris
 
-Dag 1:
+🔄 Fallback-data används om API inte är tillgängligt (t.ex. på GitHub Pages)
 
-- Sätesbokning med klick och dynamisk prisuppdatering
+🛠 Teknisk lösning
 
-Dag 2:
+JavaScript (ES6-moduler)
 
-- Movie-klass och JSON-server
-- Hämtning av filmer via fetch
+Movie-klass för filmdata
 
-Dag 3:
+JSON-server (lokalt REST API)
 
-- Modulindelning av koden
-- Koppling mellan filmval och sätesbokning
-- Fallback för GitHub Pages
-- Uppdaterade priser och lade till film
+Moduluppdelad kod:
 
+Movie.js
 
-Komplettering 1:
+api.js
 
-- Installerat ESLint och konfigurerat projektet för webbläsarmiljö.
+seatBooking.js
 
-- Kört eslint --fix för att automatisera formatering av semikolon och citattecken i alla moduler.
+main.js
 
-- Åtgärdat manuellt "no-unused-vars" i api.js för att rensa bort oanvänd felhanteringskod.
+GitHub Pages (statisk deployment)
 
-- Verifierat att koden nu passerar linting utan anmärkningar.
+🧪 Kodkvalitet
 
-Länkar:
+Installerade och konfigurerade ESLint
 
+Kör eslint --fix för automatisk kodformatering
 
-- Live: https://berrin006.github.io/movie-seatbooking/
-- Repo: https://github.com/Berrin006/movie-seatbooking
+Fixade no-unused-vars i api.js
+
+Verifierade att projektet passerar linting utan fel
+
+🚀 Live och Repository
+
+🌐 Live demo:
+👉 https://Berrin006.github.io/movie-seatbooking/
+
+💻 GitHub repo:
+👉 https://github.com/Berrin006/movie-seatbooking
+
+▶️ Hur man kör projektet
+Alternativ 1 (Rekommenderas)
+
+Klona repositoryt:
+
+git clone https://github.com/Berrin006/movie-seatbooking.git
+
+Öppna projektmappen.
+
+Högerklicka på index.html → välj Open with Live Server (om du har Live Server extension).
+
+Alternativ 2
+
+Öppna projektmappen.
+
+Dubbelklicka på index.html för att starta applikationen i webbläsaren.
+
+Om JSON-server lokalt ska köras
+
+Om du vill testa API-hämtning lokalt:
+
+npm install
+npm run server
+
+Servern startar på:
+http://localhost:3000
